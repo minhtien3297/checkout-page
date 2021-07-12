@@ -182,6 +182,7 @@ button {
 .product-info .product-price .original-price {
   color: #4e5150;
   font-size: 12px;
+  text-decoration: line-through;
 }
 
 .product .product-number {
@@ -248,4 +249,60 @@ footer div {
 #username {
   text-decoration: underline;
   font-weight: 700;
+}
+
+@media (max-width: 375px) {
+  main {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
+
+  form {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .form .input-icon .material-icons {
+    padding-left: 0px;
+    width: 35px;
+  }
+
+  .form .input-icon input {
+    padding-left: 30px;
+    font-size: 12px;
+  }
+
+  .address-item .input-icon .material-icons {
+    padding-right: 0px;
+    width: 35px;
+  }
+
+  .address-item .input-icon select {
+    padding-left: 30px;
+    font-size: 12px;
+  }
+
+  .form #arrow{
+    left: 130px;
+  }
+
+  .form #arrow .arrow{
+    width: 25px;
+  }
+
+  .product-info .product-name{
+    font-size: 12px;
+  }
+
+  .product-info .product-price .sale-price{
+    font-size: 14px;
+  }
+
+  .product-info .product-price .original-price{
+    font-size: 10px;
+  }
+
+  .product .product-number{
+    width: 110px;
+  }
 }
